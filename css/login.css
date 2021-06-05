@@ -1,0 +1,211 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #E9F0F1;
+}
+body .login {
+  background-color: white;
+  display: grid;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 40px;
+  margin-top: 50px;
+  padding: 40px 250px 40px 50px;
+}
+body .login .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .login .entering {
+  font-family: "Abel", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 14px;
+  text-align: center;
+}
+body .login .entering input {
+  color: #565656;
+  background-color: #D8D7D7;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin-bottom: 14px;
+  border: none;
+  outline: none;
+}
+body .login .entering .button_login {
+  background-color: #00B4DB;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 18px;
+  margin-bottom: 14px;
+  border: none;
+  width: 196.8px;
+}
+body .login .entering p {
+  text-align: center;
+  font-size: 14px;
+}
+body .login .entering .create_acc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .login .entering .create_acc img {
+  margin-left: 5px;
+}
+body .login .entering h3 {
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+/*        MEDIA       */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .login .square img {
+    height: 200px;
+  }
+  .login .entering .button_login, .login .entering input {
+    width: 160px !important;
+  }
+  .login .entering .button_login {
+    font-size: 16px !important;
+  }
+  .login .entering h3 {
+    font-size: 20px !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  body {
+    background-color: white;
+  }
+
+  .login {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 0 40px !important;
+  }
+  .login .square {
+    margin-bottom: 50px;
+  }
+  .login .square img {
+    height: 450px;
+  }
+  .login .entering .button_login, .login .entering input {
+    width: 360px !important;
+    font-size: 18px !important;
+    padding: 14px 20px !important;
+  }
+  .login .entering h3 {
+    font-size: 42px !important;
+  }
+  .login .entering p {
+    font-size: 18px !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  body {
+    background-color: white;
+  }
+
+  .login {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 0 40px !important;
+  }
+  .login .square {
+    margin-bottom: 50px;
+  }
+  .login .square img {
+    height: 380px;
+  }
+  .login .entering .button_login, .login .entering input {
+    width: 300px !important;
+    font-size: 16px !important;
+    padding: 14px 20px !important;
+  }
+  .login .entering h3 {
+    font-size: 37px !important;
+  }
+  .login .entering p {
+    font-size: 16px !important;
+  }
+}
+@media (min-width: 451px) and (max-width: 576px) {
+  body {
+    background-color: white;
+  }
+
+  .login {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 0 40px !important;
+  }
+  .login .square {
+    margin-bottom: 50px;
+  }
+  .login .square img {
+    height: 320px;
+  }
+  .login .entering .button_login, .login .entering input {
+    width: 260px !important;
+    font-size: 16px !important;
+    padding: 12px 20px !important;
+  }
+  .login .entering h3 {
+    font-size: 32px !important;
+  }
+  .login .entering p {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 450px) {
+  body {
+    background-color: white;
+  }
+
+  .login {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 0 20px !important;
+  }
+  .login .square {
+    margin-bottom: 50px;
+  }
+  .login .square img {
+    height: 240px;
+  }
+  .login .entering .button_login, .login .entering input {
+    width: 100% !important;
+    font-size: 16px !important;
+    padding: 12px 20px !important;
+  }
+  .login .entering h3 {
+    font-size: 30px !important;
+  }
+  .login .entering p {
+    font-size: 16px !important;
+  }
+}

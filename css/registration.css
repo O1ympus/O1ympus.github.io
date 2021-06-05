@@ -1,0 +1,271 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+  background-color: #E9F0F1;
+}
+body input, body select, html input, html select {
+  outline: none;
+}
+body .registration, html .registration {
+  padding: 60px 80px 200px 80px;
+}
+body .registration h1, html .registration h1 {
+  font-weight: 700;
+  font-size: 42px;
+  text-align: center;
+}
+body .registration .registration_intro .columns, html .registration .registration_intro .columns {
+  display: grid;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  grid-template-columns: repeat(2, 1fr);
+}
+body .registration .registration_intro .columns .second_inputs_column, html .registration .registration_intro .columns .second_inputs_column {
+  margin-left: 0;
+  margin-right: auto;
+}
+body .registration .registration_intro .columns .first_inputs_column, html .registration .registration_intro .columns .first_inputs_column {
+  margin-left: auto;
+  margin-right: 0;
+  position: relative;
+}
+body .registration .registration_intro .columns .first_inputs_column .under_form, html .registration .registration_intro .columns .first_inputs_column .under_form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 100%);
+}
+body .registration .registration_intro .columns .first_inputs_column .under_form .button_registration, html .registration .registration_intro .columns .first_inputs_column .under_form .button_registration {
+  background-color: #2E80FA;
+  padding: 14px 90px;
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+  margin: 30px 0 15px;
+  border-radius: 10px;
+  border: none;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group, body .registration .registration_intro .columns .second_inputs_column .form-group, html .registration .registration_intro .columns .first_inputs_column .form-group, html .registration .registration_intro .columns .second_inputs_column .form-group {
+  width: 400px;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group label, body .registration .registration_intro .columns .second_inputs_column .form-group label, html .registration .registration_intro .columns .first_inputs_column .form-group label, html .registration .registration_intro .columns .second_inputs_column .form-group label {
+  font-weight: 500;
+  font-size: 24px;
+  padding: 25px 0 10px;
+  color: #5A5D5E;
+  display: block;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group input, body .registration .registration_intro .columns .second_inputs_column .form-group input, html .registration .registration_intro .columns .first_inputs_column .form-group input, html .registration .registration_intro .columns .second_inputs_column .form-group input {
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  border: 2px solid #D8D8D8;
+  color: #5A5D5E;
+  font-weight: 400;
+  font-size: 16px;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .custom-select, body .registration .registration_intro .columns .second_inputs_column .form-group .custom-select, html .registration .registration_intro .columns .first_inputs_column .form-group .custom-select, html .registration .registration_intro .columns .second_inputs_column .form-group .custom-select {
+  position: relative;
+  width: 400px;
+  border-radius: 10px;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .custom-select select, body .registration .registration_intro .columns .second_inputs_column .form-group .custom-select select, html .registration .registration_intro .columns .first_inputs_column .form-group .custom-select select, html .registration .registration_intro .columns .second_inputs_column .form-group .custom-select select {
+  display: none;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .custom-select select option:last-child, body .registration .registration_intro .columns .second_inputs_column .form-group .custom-select select option:last-child, html .registration .registration_intro .columns .first_inputs_column .form-group .custom-select select option:last-child, html .registration .registration_intro .columns .second_inputs_column .form-group .custom-select select option:last-child {
+  border-radius: 10px;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .select-selected, body .registration .registration_intro .columns .second_inputs_column .form-group .select-selected, html .registration .registration_intro .columns .first_inputs_column .form-group .select-selected, html .registration .registration_intro .columns .second_inputs_column .form-group .select-selected {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #D8D8D8;
+  padding: 10px;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .select-arrow-active, body .registration .registration_intro .columns .second_inputs_column .form-group .select-arrow-active, html .registration .registration_intro .columns .first_inputs_column .form-group .select-arrow-active, html .registration .registration_intro .columns .second_inputs_column .form-group .select-arrow-active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-width: 1px;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .select-selected:after, body .registration .registration_intro .columns .second_inputs_column .form-group .select-selected:after, html .registration .registration_intro .columns .first_inputs_column .form-group .select-selected:after, html .registration .registration_intro .columns .second_inputs_column .form-group .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-color: #fff transparent transparent transparent;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .select-selected.select-arrow-active:after, body .registration .registration_intro .columns .second_inputs_column .form-group .select-selected.select-arrow-active:after, html .registration .registration_intro .columns .first_inputs_column .form-group .select-selected.select-arrow-active:after, html .registration .registration_intro .columns .second_inputs_column .form-group .select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .select-items, body .registration .registration_intro .columns .second_inputs_column .form-group .select-items, html .registration .registration_intro .columns .first_inputs_column .form-group .select-items, html .registration .registration_intro .columns .second_inputs_column .form-group .select-items {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 2px solid #D8D8D8;
+  border-top: none;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .select-items div, body .registration .registration_intro .columns .first_inputs_column .form-group .select-selected, body .registration .registration_intro .columns .second_inputs_column .form-group .select-items div, body .registration .registration_intro .columns .second_inputs_column .form-group .select-selected, html .registration .registration_intro .columns .first_inputs_column .form-group .select-items div, html .registration .registration_intro .columns .first_inputs_column .form-group .select-selected, html .registration .registration_intro .columns .second_inputs_column .form-group .select-items div, html .registration .registration_intro .columns .second_inputs_column .form-group .select-selected {
+  color: #5A5D5E;
+  padding: 10px;
+  cursor: pointer;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .select-items div, body .registration .registration_intro .columns .second_inputs_column .form-group .select-items div, html .registration .registration_intro .columns .first_inputs_column .form-group .select-items div, html .registration .registration_intro .columns .second_inputs_column .form-group .select-items div {
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  border-left: 0;
+  border-right: 0;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .select-items div:last-child, body .registration .registration_intro .columns .second_inputs_column .form-group .select-items div:last-child, html .registration .registration_intro .columns .first_inputs_column .form-group .select-items div:last-child, html .registration .registration_intro .columns .second_inputs_column .form-group .select-items div:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 0;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .select-items, body .registration .registration_intro .columns .second_inputs_column .form-group .select-items, html .registration .registration_intro .columns .first_inputs_column .form-group .select-items, html .registration .registration_intro .columns .second_inputs_column .form-group .select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .select-hide, body .registration .registration_intro .columns .second_inputs_column .form-group .select-hide, html .registration .registration_intro .columns .first_inputs_column .form-group .select-hide, html .registration .registration_intro .columns .second_inputs_column .form-group .select-hide {
+  display: none;
+}
+body .registration .registration_intro .columns .first_inputs_column .form-group .select-items div:hover, body .registration .registration_intro .columns .first_inputs_column .form-group .same-as-selected, body .registration .registration_intro .columns .second_inputs_column .form-group .select-items div:hover, body .registration .registration_intro .columns .second_inputs_column .form-group .same-as-selected, html .registration .registration_intro .columns .first_inputs_column .form-group .select-items div:hover, html .registration .registration_intro .columns .first_inputs_column .form-group .same-as-selected, html .registration .registration_intro .columns .second_inputs_column .form-group .select-items div:hover, html .registration .registration_intro .columns .second_inputs_column .form-group .same-as-selected {
+  color: #2E80FA;
+}
+body .registration .registration_intro .columns span, html .registration .registration_intro .columns span {
+  color: #5A5D5E;
+  font-weight: 400;
+  font-size: 16px;
+}
+body .registration .registration_intro .columns span .underline_blue, html .registration .registration_intro .columns span .underline_blue {
+  -webkit-text-decoration: #2E80FA underline;
+          text-decoration: #2E80FA underline;
+}
+body .registration .registration_intro .columns p, html .registration .registration_intro .columns p {
+  color: #5A5D5E;
+  font-weight: 400;
+  font-size: 16px;
+}
+body .registration .registration_intro .columns p .log_in, html .registration .registration_intro .columns p .log_in {
+  color: #2E80FA;
+}
+body .registration .registration_intro .columns .accept, html .registration .registration_intro .columns .accept {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40px;
+}
+body .registration .registration_intro .columns .accept .square, html .registration .registration_intro .columns .accept .square {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #5A5D5E;
+  margin-right: 20px;
+}
+body .registration .registration_intro .columns .accept .square .near_square, html .registration .registration_intro .columns .accept .square .near_square {
+  line-height: 20px;
+}
+
+/*        MEDIA       */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .registration .registration_intro .columns {
+    -moz-column-gap: 70px !important;
+         column-gap: 70px !important;
+  }
+  .registration .registration_intro .columns .first_inputs_column .form-group, .registration .registration_intro .columns .second_inputs_column .form-group {
+    width: 350px !important;
+  }
+  .registration .registration_intro .columns .first_inputs_column .form-group .custom-select, .registration .registration_intro .columns .second_inputs_column .form-group .custom-select {
+    width: 350px !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .registration {
+    padding: 60px 40px 200px 40px !important;
+  }
+  .registration .registration_intro .columns {
+    -moz-column-gap: 70px !important;
+         column-gap: 70px !important;
+  }
+  .registration .registration_intro .columns .first_inputs_column .button_registration, .registration .registration_intro .columns .second_inputs_column .button_registration {
+    padding: 12px 65px !important;
+  }
+  .registration .registration_intro .columns .first_inputs_column .form-group, .registration .registration_intro .columns .second_inputs_column .form-group {
+    width: 300px !important;
+  }
+  .registration .registration_intro .columns .first_inputs_column .form-group .custom-select, .registration .registration_intro .columns .second_inputs_column .form-group .custom-select {
+    width: 300px !important;
+  }
+}
+@media (min-width: 451px) and (max-width: 768px) {
+  .registration {
+    padding: 60px 40px 200px 40px !important;
+  }
+  .registration .registration_intro .columns {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .registration .registration_intro .columns .first_inputs_column .under_form {
+    bottom: -420px !important;
+    width: 100%;
+  }
+  .registration .registration_intro .columns .first_inputs_column .under_form .button_registration {
+    width: 100%;
+    padding: 14px 0 !important;
+    font-size: 20px !important;
+  }
+  .registration .registration_intro .columns .first_inputs_column .under_form p {
+    text-align: center;
+  }
+  .registration .registration_intro .columns .first_inputs_column, .registration .registration_intro .columns .second_inputs_column {
+    margin: 0 auto !important;
+  }
+  .registration .registration_intro .columns .first_inputs_column .form-group, .registration .registration_intro .columns .second_inputs_column .form-group {
+    width: 300px !important;
+  }
+  .registration .registration_intro .columns .first_inputs_column .form-group .custom-select, .registration .registration_intro .columns .second_inputs_column .form-group .custom-select {
+    width: 300px !important;
+  }
+}
+@media (max-width: 450px) {
+  .registration {
+    padding: 60px 20px 200px 20px !important;
+  }
+  .registration .registration_intro .columns {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .registration .registration_intro .columns .first_inputs_column .under_form {
+    bottom: -410px !important;
+    width: 100%;
+  }
+  .registration .registration_intro .columns .first_inputs_column .under_form .button_registration {
+    width: 100%;
+    padding: 14px 0 !important;
+    font-size: 20px !important;
+  }
+  .registration .registration_intro .columns .first_inputs_column .under_form p {
+    text-align: center;
+  }
+  .registration .registration_intro .columns .first_inputs_column, .registration .registration_intro .columns .second_inputs_column {
+    margin: 0 auto !important;
+  }
+  .registration .registration_intro .columns .first_inputs_column .form-group, .registration .registration_intro .columns .second_inputs_column .form-group {
+    width: 250px !important;
+  }
+  .registration .registration_intro .columns .first_inputs_column .form-group label, .registration .registration_intro .columns .second_inputs_column .form-group label {
+    font-size: 22px !important;
+  }
+  .registration .registration_intro .columns .first_inputs_column .form-group .custom-select, .registration .registration_intro .columns .second_inputs_column .form-group .custom-select {
+    width: 250px !important;
+  }
+}

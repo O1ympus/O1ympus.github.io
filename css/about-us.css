@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+.about-us{
+    font-family: 'Abel', sans-serif;
+    background-color: #E9F0F1;
+    color: #000;
+    overflow-x: hidden;
+    font-size: 24px;
+}
+.about-us h3{
+    padding-left: 80px;
+}
+.about-us .img-wrap7 img{
+    padding: 30px 0;
+    height: 300px;
+}
+.about-us .top-block{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+.about-us .top-block .img-wrap1{
+    width: 50% !important;
+}
+.about-us .top-block .img-wrap1 img{
+    width: 100%;
+    height: auto;
+}
+.about-us .top-block .base-info{
+    font-family: 'Merriweather', serif;
+}
+.about-us .top-block .base-info h2{
+    padding-bottom: 10px;
+}
+.about-us .second-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    margin-top: 30px;
+}
+.about-us .second-block .img-wrap2, .about-us .second-block .img-wrap3{
+    width: calc(50% - 15px);
+}
+.about-us .img-wrap2 img{
+    width: 100%;
+    height: auto;
+}
+.about-us .img-wrap3 div{
+}
+.about-us .img-wrap3 img{
+    width: auto;
+    height: 150px;
+}
+.about-us .img-wrap4 {
+    margin-left: 56px;
+}
+.about-us .img-wrap4 img{
+    width: 460px;
+    height: auto;
+}
+.about-us .img-wrap5, .about-us .img-wrap6{
+    width: 500px;
+    height: auto;
+}
+.about-us hr{
+    margin-left: 80px;
+    height: auto;
+    width: 100px;
+}
+@media (min-width:768px) and (max-width:1100px) {
+    .about-us .row{
+        flex-direction: column;
+    }
+    .about-us .img-wrap3 img{
+        display: none;
+    }
+    .about-us .row .a{
+        flex-direction: row;
+    }
+}
+@media (min-width:376px) and (max-width:768px) {
+    .about-us {
+        font-size: 12px;
+    }
+    .about-us .img-wrap1 img{
+        width: 100%;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .about-us .row{
+        flex-direction: column;
+    }
+    .about-us .img-wrap3 img{
+        display: none;
+    }
+    .about-us .img-wrap4 img{
+        margin-left: 0;
+    }
+    .about-us .row .a{
+        flex-direction: row;
+    }
+}
+@media (max-width: 376px) {
+    .about-us {
+        font-size: 12px;
+    }
+
+    .about-us .img-wrap1 img {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .about-us .row {
+        flex-direction: column;
+    }
+
+    .about-us .img-wrap3 img {
+        display: none;
+    }
+
+    .about-us .img-wrap4 img {
+        margin-left: 0;
+    }
+
+    .about-us .row .a {
+        flex-direction: column-reverse;
+    }
+}
+

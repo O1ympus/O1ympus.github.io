@@ -1,0 +1,186 @@
+.response .mobile {
+    display: none;
+}
+.response .tablet {
+    display: none;
+}
+.response{
+    font-family: 'Abel', sans-serif;
+    background-color: #E9F0F1;
+    color: #000;
+    overflow-x: hidden;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.response .gallery {
+    background: #E9F0F1;
+}
+
+.response .gallery-cell {
+    width: 66%;
+    border-radius: 10px;
+    counter-increment: gallery-cell;
+    height: 250px;
+    margin-right: 100px;
+    background: #fff;
+}
+.response .gallery-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: #000;
+}
+.gallery-text {
+    margin-top: 15px;
+}
+.gallery-avatar img{
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+.gallery-name{
+    margin-top: 15px;
+    color: #00B4DB;
+}
+.gallery-time{
+    margin-top: 15px;
+    font-size: 12px;
+}
+.response h3{
+    margin: 100px auto 30px 30px;
+}
+.response .avatar img{
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+}
+.response .comment img{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    height: auto;
+    width: 800px;
+}
+.name {
+    color: #00B4DB;
+    position: absolute;
+    top: 15px;
+    left: 60px;
+}
+.time {
+    color: #000;
+    font-size: 12px;
+    position: absolute;
+    top: 19px;
+    left: 180px;
+}
+.text {
+    color: #000;
+    position: absolute;
+    top: 45px;
+    left: 60px;
+}
+form{
+    margin-left: 30px;
+}
+.response .btn {
+    margin-left: 15px;
+    color: #fff;
+    background-color: #00B4DB;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.response .btn:hover {
+    background-color: #b8b7b7;
+}
+
+@media (min-width:376px) and (max-width:768px) {
+    h3{
+        font-size: 24px;
+    }
+    .response .comm .avatar img{
+        width: 25px;
+        height: 25px;
+    }
+    .response .comm .comment .desktop{
+        display: none;
+    }
+    .response .comm .comment .tablet{
+        display: block;
+        width: 100%;
+        margin-left: 25px;
+    }
+    .response .comment{
+        font-size: 12px;
+    }
+    .name {
+        color: #00B4DB;
+        position: absolute;
+        top: 5px;
+        left: 70px;
+    }
+    .time {
+        color: #000;
+        font-size: 10px;
+        position: absolute;
+        top: 7px;
+        left: 150px;
+    }
+    .text {
+        color: #000;
+        position: absolute;
+        top: 25px;
+        left: 70px;
+    }
+    form .col-5 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 376px){
+    h3{
+        font-size: 24px;
+    }
+    .response .comm .comment .desktop{
+        display: none;
+    }
+    .response .comm .comment .tablet{
+        display: none;
+    }
+    .response .comm .comment .mobile{
+        display: block;
+        height: 160px;
+        margin-left: 25px;
+    }
+    .response .comment{
+        font-size: 12px;
+    }
+    .name {
+        color: #00B4DB;
+        position: absolute;
+        top: 7px;
+        left: 100px;
+    }
+    .time {
+        color: #000;
+        font-size: 10px;
+        position: absolute;
+        top: 9px;
+        left: 180px;
+    }
+    .text {
+        color: #000;
+        position: absolute;
+        top: 35px;
+        left: 100px;
+    }
+    form .col-5 {
+        max-width: 100%;
+    }
+}

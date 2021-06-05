@@ -1,0 +1,141 @@
+a:hover{
+    text-decoration: none !important;
+}
+.header_extra, .footer{
+    display: none;
+}
+ul{
+    margin-bottom: 0 !important;
+}
+h3{
+    font-size: 24px !important;
+}
+.contacts{
+    font-family: 'Abel', sans-serif;
+    background: rgb(0,180,219);
+    background: linear-gradient(45deg, rgba(0,180,219,1) 0%, rgba(0,131,176,1) 100%);
+    color: #fff;
+    height: calc(100vh - 58px);
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+.contacts a{
+    text-decoration: none;
+    color: #fff;
+}
+.contacts .row{
+    margin-left: 0;
+}
+.contacts .btn{
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.contacts .btn:hover {
+    background-color: #fff;
+    color: #00B4DB;
+}
+.contacts .col-6{
+    margin: 30px 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.contacts .column-left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.contacts .form-signin label{
+    margin-bottom: 15px;
+    padding-left: 0 !important;
+}
+.contacts .location, .contacts .phone{
+    margin-bottom: 30px;
+}
+.contacts .form-signin h2{
+    margin-bottom: 20px;
+}
+.contacts .location p, .contacts .phone p, .contacts .mail p{
+    margin-left: 50px;
+    padding-left: 15px;
+}
+.contacts .mail p{
+    margin-bottom: 0 !important;
+}
+.contacts .location h3, .contacts .phone h3, .contacts .mail h3 {
+    padding-left: 15px;
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .contacts{
+        padding: 0 40px;
+    }
+    .contacts .row .col-6 h2{
+        font-size: 28px !important;
+    }
+}
+@media (min-width:576px) and (max-width:768px) {
+    .contacts{
+        padding: 0 40px;
+    }
+    .contacts .row {
+        flex-direction: column-reverse;
+        column-width: max-content;
+    }
+    .contacts .row .col-6 {
+        max-width: 100%;
+    }
+    .contacts .row .location .row, .contacts .row .phone .row, .contacts .row .mail .row {
+        flex-direction: row;
+        max-width: 100%;
+    }
+}
+@media (min-width:377px) and (max-width:576px) {
+    .contacts{
+        padding: 0 20px;
+    }
+    .contacts .row {
+        flex-direction: column-reverse;
+        column-width: max-content;
+    }
+    .contacts .row .col-6 {
+        max-width: 100%;
+    }
+    .contacts .row .col-6 h2{
+        font-size: 28px !important;
+    }
+    .contacts .row .location .row, .contacts .row .phone .row, .contacts .row .mail .row {
+        flex-direction: row;
+        max-width: 100%;
+    }
+}
+@media (max-width: 376px) {
+    .contacts .row .col-6 h2{
+        font-size: 24px !important;
+    }
+    .contacts{
+        padding: 0 20px;
+    }
+    .contacts .row {
+        flex-direction: column-reverse;
+        column-width: max-content;
+    }
+
+    .contacts .row .col-6 {
+        max-width: 100%;
+    }
+
+    .contacts .row .location .row, .contacts .row .phone .row, .contacts .row .mail .row {
+        flex-direction: row;
+        max-width: 100%;
+    }
+}

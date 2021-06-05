@@ -1,0 +1,276 @@
+body {
+  background: white; }
+
+.header {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; }
+
+.header_extra {
+  display: none; }
+
+.footer {
+  margin: 0; }
+
+.grid {
+  border: 3px solid #F7F7F7;
+  border-left: none;
+  margin: 180px 80px; }
+  .grid__headers {
+    background: #F7F7F7;
+    padding: 10px 80px 10px 400px;
+    margin-bottom: 20px; }
+    .grid__headers ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .grid__headers ul li {
+        width: 25%; }
+        .grid__headers ul li a {
+          font-size: 18px;
+          color: #5A4C41;
+          font-family: "Nunito", sans-serif;
+          font-weight: 700; }
+  .grid .product {
+    padding-left: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px; }
+    .grid .product form .product_remove {
+      background: none;
+      padding: 10px;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      border: 2px solid #F1F1F1;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .grid .product form .product_remove img {
+        height: auto;
+        width: 100%; }
+    .grid .product__image {
+      width: 60px;
+      height: 60px;
+      margin-left: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .grid .product__image img {
+        height: auto;
+        width: 100%; }
+    .grid .product .parameters_wrapper {
+      width: calc(100% - 400px);
+      margin-left: 198px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #5A4C41;
+      font-family: "Nunito", sans-serif;
+      font-weight: 500; }
+    .grid .product .parameters_name, .grid .product .parameters_price, .grid .product .parameters_total {
+      width: 25%;
+      font-size: 18px; }
+    .grid .product .parameters_price, .grid .product .parameters_total {
+      color: #14AFF1; }
+    .grid .product .parameters_quantity {
+      display: flex;
+      width: 25%;
+      justify-content: flex-start;
+      align-items: center;
+      height: 44.8px; }
+      .grid .product .parameters_quantity .quantity_count {
+        padding: 10px 15px;
+        border: 2px solid #F7F7F7;
+        border-left: none; }
+      .grid .product .parameters_quantity form {
+        height: 100%;
+        display: block; }
+        .grid .product .parameters_quantity form button {
+          padding: 6px 15px;
+          height: 100%;
+          border: 2px solid #F7F7F7;
+          display: block;
+          width: 100%;
+          background: none;
+          border-left: none; }
+        .grid .product .parameters_quantity form .minus {
+          border-left: none;
+          border-right: none; }
+  .grid .total {
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    color: #5A4C41;
+    padding: 15px 0 15px 80px;
+    border-top: 3px solid #F7F7F7;
+    border-bottom: 3px solid #F7F7F7; }
+    .grid .total__price {
+      width: 122px; }
+    .grid .total .price_wrapper {
+      display: flex;
+      justify-content: flex-start;
+      width: calc(100% - 400px);
+      align-items: center;
+      margin-left: 198px; }
+      .grid .total .price_wrapper .gap, .grid .total .price_wrapper .total_result {
+        width: 25%;
+        color: #14AFF1; }
+  .grid .accept_wrapper {
+    padding-left: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .grid .accept_wrapper input {
+      display: none; }
+    .grid .accept_wrapper .gap {
+      width: calc(25% - 20px); }
+    .grid .accept_wrapper .accept {
+      margin: 25px 20px 25px 0;
+      width: 25%; }
+      .grid .accept_wrapper .accept button {
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        width: 100%;
+        display: block;
+        color: white;
+        padding: 12px 16px;
+        background: #14AFF1;
+        border: none; }
+
+@media (min-width: 1201px) and (max-width: 1682px) {
+  .grid form .accept_wrapper .accept {
+    margin-right: 0;
+    width: 30%; }
+    .grid form .accept_wrapper .accept button {
+      font-size: 14px;
+      padding: 12px 10px; } }
+@media (min-width: 993px) and (max-width: 1200px) {
+  .grid .grid__headers {
+    padding-left: 200px;
+    padding-right: 40px; }
+  .grid .product, .grid .total {
+    padding-left: 40px; }
+  .grid .product {
+    padding-right: 40px; }
+    .grid .product .parameters_wrapper {
+      width: calc(100% - 162px);
+      margin-left: 38px; }
+  .grid .total {
+    padding-right: 40px; }
+    .grid .total .price_wrapper {
+      margin-left: 217px; }
+  .grid form .accept_wrapper {
+    padding-left: 217px; }
+    .grid form .accept_wrapper .accept {
+      margin-right: 0;
+      width: 30%; }
+      .grid form .accept_wrapper .accept button {
+        font-size: 14px;
+        padding: 12px 10px; } }
+@media (min-width: 769px) and (max-width: 992px) {
+  .grid {
+    margin-left: 40px;
+    margin-right: 40px; }
+    .grid .grid__headers {
+      padding-left: 149px;
+      padding-right: 10px; }
+    .grid .product, .grid .total {
+      padding-left: 10px; }
+    .grid .product {
+      padding-right: 10px; }
+      .grid .product form {
+        width: 24px;
+        height: 24px; }
+        .grid .product form .product_remove {
+          width: 24px;
+          height: 24px;
+          padding: 4px; }
+          .grid .product form .product_remove img {
+            width: 8px;
+            height: 8px; }
+      .grid .product .parameters_wrapper {
+        width: calc(100% - 130px);
+        margin-left: 38px; }
+      .grid .product__image {
+        margin-left: 15px; }
+        .grid .product__image img {
+          width: 45px;
+          height: 45px; }
+    .grid .total {
+      padding-right: 40px; }
+      .grid .total .price_wrapper {
+        margin-left: 236px; }
+    .grid form {
+      padding-right: 20px; }
+      .grid form .accept_wrapper {
+        padding-left: 236px; }
+        .grid form .accept_wrapper .accept {
+          margin-right: 0;
+          width: 35%;
+          margin-top: 15px;
+          margin-bottom: 15px; }
+          .grid form .accept_wrapper .accept button {
+            font-size: 12px;
+            padding: 12px 6px; } }
+@media (min-width: 577px) and (max-width: 768px) {
+  .grid {
+    margin-left: 40px;
+    margin-right: 40px; }
+    .grid .grid__headers {
+      padding-left: 85px;
+      padding-right: 5px; }
+      .grid .grid__headers ul li a {
+        font-size: 14px; }
+    .grid .product, .grid .total {
+      padding-left: 0; }
+    .grid .product {
+      padding-right: 5px; }
+      .grid .product form {
+        width: 24px;
+        height: 24px;
+        display: none; }
+      .grid .product .parameters_wrapper {
+        width: 100%;
+        margin-left: 33px; }
+        .grid .product .parameters_wrapper .parameters_name, .grid .product .parameters_wrapper .parameters_price, .grid .product .parameters_wrapper .parameters_quantity, .grid .product .parameters_wrapper .parameters_total {
+          font-size: 14px; }
+        .grid .product .parameters_wrapper .parameters_quantity {
+          height: 31.2px; }
+          .grid .product .parameters_wrapper .parameters_quantity form {
+            width: 30px; }
+            .grid .product .parameters_wrapper .parameters_quantity form button {
+              padding-left: 11px;
+              padding-right: 11px; }
+          .grid .product .parameters_wrapper .parameters_quantity .quantity_count {
+            padding: 4px 10px; }
+      .grid .product__image {
+        margin-left: 0; }
+        .grid .product__image img {
+          width: 45px;
+          height: 45px; }
+    .grid .total {
+      padding-right: 10px;
+      font-size: 14px; }
+      .grid .total .price_wrapper {
+        margin-left: 178px;
+        width: calc(100% - 300px); }
+        .grid .total .price_wrapper .gap {
+          width: 20%; }
+    .grid form .accept_wrapper {
+      padding-left: 236px; }
+      .grid form .accept_wrapper .gap {
+        width: 15%; }
+      .grid form .accept_wrapper .accept {
+        margin-right: 0;
+        width: 50%;
+        margin-top: 15px;
+        margin-bottom: 15px; }
+        .grid form .accept_wrapper .accept button {
+          font-size: 10px;
+          padding: 12px 6px; } }
+
+/*# sourceMappingURL=cart.css.map */
